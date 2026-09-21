@@ -1,0 +1,19 @@
+ip: pdm
+contract: { aw: 8, dw: 32 }
+base: 0x10000000
+size: 0x100
+params: [dataWidth]
+
+regs:
+  - name: ctrl
+    offset: 0x00
+    desc: control
+    fields: [ { name: enable, bits: "0:0", sw: rw, hw: r, reset: 0 } ]
+  - name: data
+    offset: 0x04
+    desc: value written by software
+    fields: [ { name: val, width: dataWidth, sw: rw, hw: r, reset: 0 } ]
+  - name: mirror
+    offset: 0x08
+    desc: data while enabled, zero otherwise
+    fields: [ { name: val, width: dataWidth, sw: r, hw: w, volatile: true } ]
