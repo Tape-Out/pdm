@@ -1,6 +1,6 @@
 # pdm
 
-One sentence saying what this block does.
+A PDM microphone interface: CIC decimation followed by a compensation FIR.
 
 ![maturity](https://img.shields.io/badge/maturity-planned-lightgrey) ![license](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0%20OR%20MulanPSL--2.0-blue)
 

@@ -5,8 +5,8 @@ kind: ip
 lang: bsv
 identity:
   slug: pdm-tapeout-bsv
-  display_name: Pdm
-  summary: One sentence saying what this block does.
+  display_name: PDM
+  summary: 'A PDM microphone interface: CIC decimation followed by a compensation FIR.'
   category: peripheral
   subcategories:
   - pdm
